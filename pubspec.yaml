@@ -19,7 +19,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images/IMG_8585_+.jpg
+    - images/IMG_8585.jpg
 
   fonts:
     - family: Pacifico

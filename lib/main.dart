@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.red,
-                backgroundImage: AssetImage('images/IMG_8585_+.jpg'),
+                backgroundImage: AssetImage('images/IMG_8585.jpg'),
               ),
               Text(
                 'Berzenin Fylyp',
@@ -33,7 +34,41 @@ class MyApp extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.teal.shade100,
                     fontWeight: FontWeight.bold),
-              )
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+38 066 018 15 01',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: "Source Sans Pro",
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'filipp.berzenin@gmail.com',
+                    style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: "Source Sans Pro",
+                        fontSize: 20.0),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
