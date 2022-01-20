@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              CircleAvatar(
-                radius: 50.0,
-                backgroundColor: Colors.red,
-                backgroundImage: AssetImage('images/IMG_8585.jpg'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+                  radius: 50.0,
+                  backgroundColor: Colors.red,
+                  backgroundImage: AssetImage('images/IMG_8585.jpg'),
+                ),
               ),
               Text(
                 'Berzenin Fylyp',
@@ -27,6 +30,9 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              SizedBox(
+                height: 10.0,
+              ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
@@ -34,6 +40,11 @@ class MyApp extends StatelessWidget {
                     fontSize: 20,
                     color: Colors.teal.shade100,
                     fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 40.0,
+                width: 150.0,
+                child: Divider(color: Colors.white),
               ),
               Card(
                 color: Colors.white,
